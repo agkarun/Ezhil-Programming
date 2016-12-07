@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <ImageView
+        android:paddingTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ezhillogo"/>
+
+
+    <ImageView
+        android:id="@+id/intro"
+        android:src="@drawable/intro"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        />
+    <ImageView
+        android:id="@+id/download"
+        android:src="@drawable/download"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="110dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <ImageView
+        android:id="@+id/code"
+        android:src="@drawable/code"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="250dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <ImageView
+        android:id="@+id/start"
+        android:src="@drawable/start"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="250dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <ImageView
+        android:id="@+id/examples"
+        android:src="@drawable/examples"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="380dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <ImageView
+        android:id="@+id/web"
+        android:src="@drawable/web"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="380dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/text1"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:textSize="24dp"
+        android:text="@string/Intro"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="200dp" />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/text2"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="@string/Install"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="210dp"/>
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/text3"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:textSize="24dp"
+        android:text="@string/Code"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="335dp"/>
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/text4"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="@string/Start"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginLeft="218dp" />
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/text5"
+        android:textStyle="bold"
+        android:layout_marginLeft="19dp"
+        android:textSize="25dp"
+        android:text="@string/Examples"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="465dp"/>
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/text6"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:text="@string/Web"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginLeft="210dp" />
+
+</RelativeLayout>

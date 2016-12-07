@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ezhil Programming</string>
+    <string name="developerdetais">மென்பொருளை மேம்படுத்தியவர் விவங்கள்</string>
+    <string name="developername">கருணாகரன்.க</string>
+    <string name="college">S.K.P Engineering college</string>
+    <string name="place">Tiruvannamalai</string>
+    <string name="email">gkharan96@gmail.com</string>
+    <string name="Ezhilweb">எழில் இணையதளம்</string>
+    <string name="EzhilSite">www.ezhillang.org</string>
+    <string name="Ezhilblog">எழில் வலைப்பதிவு</string>
+    <string name="Ezhilblogsite">www.ezhillang.wordpress.com</string>
+    <string name="EzhilSource">எழில்மொழி மூலநிரல்</string>
+    <string name="EzhilSourcedesc">கீழே உள்ள இணைப்பில் எழில் மொழயின்  மூலநிரல்களை பெற்று  நீங்களும் பங்களிக்கலாம்.</string>
+    <string name="Ezhilgit">https://github.com/Ezhil-Language-Foundation/Ezhil-Lang</string>
+    <string name="license">மென்பொருள் உரிமம்</string>
+    <string name="licensedesc">இந்த எழில் கையேடு ஒரு திறமூல மென்பொருள் மற்றும் Apache License,Version 2.0 ன் கீழ் உரிமம் பெற்றது.மேலும் விவரங்களுக்கு கீழே உள்ள இணைப்பில் செல்லவும்.</string>
+    <string name="licensetext">http://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="Appsourcedesc">எழில் கையேட்டின் மூலநிரலை பெற்று நீங்களும் பங்களிக்கலாம்,நிரலை பெற கீழே உள்ள இணைப்பில் செல்லவும்.</string>
+    <string name="Appsourcegit">https://github.com/gkarunakaran/Ezhil-Programming.git</string>
+    <string name="Intro">எழில் ஓர் அறிமுகம்</string>
+    <string name="Install">பதிவிறக்க(ம)நிறுவ</string>
+    <string name="Code">எழிலில் நிரல் எழுத</string>
+    <string name="Start">எழிலை தொடங்கு</string>
+    <string name="Examples">உதாரணங்கள்</string>
+    <string name="Web">வலைதளத்தில் எழில்</string>
+    <string name="About">செயலியை பற்றி</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<html>
+<head><title>Ezhil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<p><center class="heading">இதுவா? அல்லது, அதுவா?</center>
+
+	சில நேரங்களில், ஒரு குறிப்பிட்ட ஒப்பீடு உண்மை என்றால், நாம் சில கட்டளைகளை இயக்குவோம், ஒருவேளை அது உண்மை அல்ல என்றால், வேறு சில கட்டளைகளை இயக்குவோம். ஆங்கிலத்தில் இதனை <span class="highlight">If-Else</span> Construct என்று அழைப்பார்கள்.
+
+	“எழில்” நிரலில் இதனை எப்படிச் செய்வது?
+
+	உதாரண நிரல்: <span class="progname">lcmgcd.n</span>
+
+	இதில் பின்வரும் வரிகளைக் கவனியுங்கள்:
+<p class="code">
+		@(எண்1 == எண்2) ஆனால்
+			<கட்டளை 1>
+		@(எண்1 > எண்2) இல்லைஆனால்
+			<கட்டளை 2>
+		இல்லை
+			<கட்டளை 3>
+		முடி
+</p>
+	இங்கே நாம் முதலில் எண்1, எண்2 இரண்டும் சமமா என்று பார்க்கிறோம், ஆம் எனில் ஒரு கட்டளையை நிறைவேற்றுகிறோம். ஒருவேளை அவை சமமாக இல்லாவிட்டால், எண்1 பெரியதா என்று பார்க்கிறோம், ஆம் எனில் இன்னொரு கட்டளையை நிறைவேற்றுகிறோம், அதுவும் இயலாவிட்டால் வேறொரு கட்டளையை நிறைவேற்றுகிறோம்.
+
+	இப்படி நாம் எத்துணை ஒப்பீடுகளை வேண்டுமானாலும் பிணைக்கலாம், அதற்கு ஓர் “<span class="highlight">ஆனால்</span>” (<span class="highlight">IF</span>), பல “<span class="highlight">இல்லைஆனால்</span>”கள் (<span class="highlight">ElseIF</span>), ஓர் “<span class="highlight">இல்லை</span>” (<span class="highlight">Else</span>) தேவைப்படும்.
+</p>
+</body>
+</html>

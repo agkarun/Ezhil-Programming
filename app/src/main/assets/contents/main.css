@@ -1,0 +1,46 @@
+body
+{
+    margin:0px;
+	background-color:rgba(71,104,177,0.12);
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: keep-all;
+}
+.heading
+{
+margin:0px;
+text-decoration:underline;
+color:green;
+font-size: 20px;
+}
+.highlight
+{
+color:#8B008B;
+font-size:15px;
+font-weight:bold;
+}
+.topic
+{
+margin:0px;
+text-decoration:underline;
+color:red;
+font-size: 15px;
+}
+.code
+{
+    font-size:12px;
+    color: yellow;
+	background-color: rgb(50,50,50);
+}
+.margin
+{
+color:red;
+background-color:white;
+margin-left:10%;
+margin-right:10%;
+border: 3px solid black;
+}
+.progname
+{  
+color:blue;
+}
