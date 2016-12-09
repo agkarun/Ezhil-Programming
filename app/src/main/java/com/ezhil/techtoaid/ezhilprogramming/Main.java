@@ -44,14 +44,21 @@ public class Main extends AppCompatActivity {
         start=(ImageView) findViewById(R.id.start);
         examples=(ImageView) findViewById(R.id.examples);
         web=(ImageView)findViewById(R.id.web);
-        Typeface typeface=Typeface.createFromAsset(getApplicationContext().getAssets(),"tamilfont.ttf");
-        text1.setTypeface(typeface);
-        text2.setTypeface(typeface);
-        text3.setTypeface(typeface);
-        text4.setTypeface(typeface);
-        text5.setTypeface(typeface);
-        text6.setTypeface(typeface);
-        cm=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        try {
+            Typeface typeface = Typeface.createFromAsset(getApplicationContext().getAssets(), "Catamaran_Regular.ttf");
+            text1.setTypeface(typeface);
+            text2.setTypeface(typeface);
+            text3.setTypeface(typeface);
+            text4.setTypeface(typeface);
+            text5.setTypeface(typeface);
+            text6.setTypeface(typeface);
+        } catch(Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, R.string.CannotChangeFont, Toast.LENGTH_SHORT).show();
+        }
+
+            cm=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         intro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

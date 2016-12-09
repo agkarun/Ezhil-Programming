@@ -22,6 +22,7 @@ public class Loadexamplehtml extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loadexamplehtml);
         web = (WebView) findViewById(R.id.examplehtml);
+        web.getSettings().setDefaultTextEncodingName("utf-8");
         web.getSettings().setDisplayZoomControls(true);
         web.getSettings().setJavaScriptEnabled(true);
         web.getSettings().setSupportZoom(true);
