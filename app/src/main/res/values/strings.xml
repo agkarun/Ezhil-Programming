@@ -10,10 +10,10 @@
     <string name="Ezhilblog">எழில் வலைப்பதிவு</string>
     <string name="Ezhilblogsite">http://ezhillang.wordpress.com</string>
     <string name="EzhilSource">எழில்மொழி மூலநிரல்</string>
-    <string name="EzhilSourcedesc">கீழே உள்ள இணைப்பில் எழில் மொழயின்  மூலநிரல்களை பெற்று  நீங்களும் பங்களிக்கலாம். 'தமிழில் நிரல் எழுது' புத்தகம், ஆசிரியர் என். சொக்கன், அ. முத்தையா.</string>
+    <string name="EzhilSourcedesc">கீழே உள்ள இணைப்பில் எழில் மொழயின்  மூலநிரல்களை பெற்று  நீங்களும் பங்களிக்கலாம். \'தமிழில் நிரல் எழுது\' புத்தகம், ஆசிரியர் என். சொக்கன், அ. முத்தையா.</string>
     <string name="Ezhilgit">https://github.com/Ezhil-Language-Foundation/Ezhil-Lang</string>
     <string name="license">மென்பொருள் உரிமம்</string>
-    <string name="licensedesc">இந்த எழில் கையேடு ஒரு திறமூல மென்பொருள் மற்றும் Apache License,Version 2.0 ன் கீழ் உரிமம் பெற்றது.மேலும் விவரங்களுக்கு கீழே உள்ள இணைப்பில் செல்லவும். நாம் பயன்படுத்திய எழுத்துரு 'Catamaran'; 'Catamaran' திட்டம் இந்திய வடிவமைப்பாளர் பிரியா ரவிச்சந்திரன் தலைமையில் உள்ளது. பங்களிக்க, github.com/VanillaandCream/Catamaran.
+    <string name="licensedesc">இந்த எழில் கையேடு ஒரு திறமூல மென்பொருள் மற்றும் Apache License,Version 2.0 ன் கீழ் உரிமம் பெற்றது.மேலும் விவரங்களுக்கு கீழே உள்ள இணைப்பில் செல்லவும். நாம் பயன்படுத்திய எழுத்துரு \'Catamaran\'; \'Catamaran\' திட்டம் இந்திய வடிவமைப்பாளர் பிரியா ரவிச்சந்திரன் தலைமையில் உள்ளது. பங்களிக்க, github.com/VanillaandCream/Catamaran.
 .</string>
     <string name="licensetext">http://www.apache.org/licenses/LICENSE-2.0</string>
     <string name="Appsourcedesc">எழில் கையேட்டின் மூலநிரலை பெற்று நீங்களும் பங்களிக்கலாம்,நிரலை பெற கீழே உள்ள இணைப்பில் செல்லவும்.</string>
