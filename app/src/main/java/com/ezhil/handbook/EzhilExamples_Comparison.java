@@ -7,7 +7,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.ezhil.techtoaid.ezhilprogramming;
+package com.ezhil.handbook;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,16 +17,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class StartEzhil_Strings extends AppCompatActivity {
+import com.ezhil.handbook.R;
+
+
+public class EzhilExamples_Comparison extends AppCompatActivity {
     ListView listView;
-    String title1="saram_neelam";
-    String title2="saram_inaikka";
-    String title3="thedal&saram_maatruthal";
-    String[] items={"சரம் நீளம் (String length)","சரம் இணைக்க(String concatenation)","தேடல் & சரங்களை மாற்றுதல்(Searching)"};
+    String title1="oppiduthal";
+    String title2="melum_sila_oppidukal";
+    String title3="onrukku_merpatta_oppidukal";
+    String[] items={"ஒப்பிடுதல்","மேலும் சில ஒப்பீடுகள்","ஒன்றுக்கு மேற்ப்பட்ட ஒப்பீடுகள்"};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.startezhil_strings);
-        listView=(ListView)findViewById(R.id.listview41);
+        setContentView(R.layout.ezhilexamples_comparison);
+        listView=(ListView)findViewById(R.id.listview51);
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -36,21 +39,22 @@ public class StartEzhil_Strings extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        Intent intent=new Intent(StartEzhil_Strings.this,Loadhtml.class);
+                        Intent intent=new Intent(EzhilExamples_Comparison.this,Loadhtml.class);
                         intent.putExtra("file",title1);
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1=new Intent(StartEzhil_Strings.this,Loadhtml.class);
+                        Intent intent1=new Intent(EzhilExamples_Comparison.this,Loadhtml.class);
                         intent1.putExtra("file",title2);
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2=new Intent(StartEzhil_Strings.this,Loadhtml.class);
+                        Intent intent2=new Intent(EzhilExamples_Comparison.this,Loadhtml.class);
                         intent2.putExtra("file",title3);
                         startActivity(intent2);
                         break;
                 }
+
             }
         });
 

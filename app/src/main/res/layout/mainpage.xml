@@ -24,11 +24,11 @@
     <ImageView
         android:id="@+id/download"
         android:src="@drawable/download"
-        android:layout_marginLeft="245dp"
         android:layout_marginTop="110dp"
         android:layout_alignParentRight="true"
         android:layout_width="75dp"
-        android:layout_height="75dp" />
+        android:layout_height="75dp"
+        android:layout_marginRight="30dp" />
 
     <ImageView
         android:id="@+id/code"
@@ -41,12 +41,12 @@
     <ImageView
         android:id="@+id/start"
         android:src="@drawable/start"
-        android:layout_marginLeft="245dp"
         android:layout_marginTop="250dp"
         android:layout_alignParentRight="true"
 
         android:layout_width="75dp"
-        android:layout_height="75dp" />
+        android:layout_height="75dp"
+        android:layout_marginRight="30dp" />
     <ImageView
         android:id="@+id/examples"
         android:src="@drawable/examples"
@@ -59,7 +59,7 @@
     <ImageView
         android:id="@+id/web"
         android:src="@drawable/web"
-        android:layout_marginLeft="245dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="380dp"
         android:layout_alignParentRight="true"
         android:layout_width="75dp"
@@ -71,22 +71,22 @@
         android:id="@+id/text1"
         android:textStyle="bold"
         android:layout_marginLeft="8dp"
-        android:textSize="24dp"
+        android:textSize="16dp"
         android:text="@string/Intro"
-        android:layout_width="180dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="200dp" />
     <TextView
         android:textColor="#000000"
         android:id="@+id/text2"
         android:textStyle="bold"
-        android:textSize="24dp"
+        android:textSize="16dp"
         android:text="@string/Install"
+        android:layout_marginRight="10dp"
         android:layout_alignParentRight="true"
-        android:layout_width="180dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="210dp"/>
+        android:layout_marginTop="200dp" />
     <TextView
         android:textColor="#000000"
         android:id="@+id/text3"
@@ -94,23 +94,23 @@
         android:layout_alignParentLeft="true"
 
         android:layout_marginLeft="8dp"
-        android:textSize="24dp"
+        android:textSize="16dp"
         android:text="@string/Code"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="335dp"/>
     <TextView
         android:textColor="#000000"
         android:id="@+id/text4"
         android:textStyle="bold"
-        android:textSize="24dp"
+        android:textSize="16dp"
         android:text="@string/Start"
         android:layout_alignParentRight="true"
 
-        android:layout_width="180dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="335dp"
-        android:layout_marginLeft="218dp" />
+        android:layout_marginRight="10dp" />
     <TextView
         android:textColor="#000000"
         android:id="@+id/text5"
@@ -118,21 +118,20 @@
         android:layout_alignParentLeft="true"
 
         android:layout_marginLeft="19dp"
-        android:textSize="25dp"
+        android:textSize="16dp"
         android:text="@string/Examples"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginTop="465dp"/>
     <TextView
         android:textColor="#000000"
         android:id="@+id/text6"
         android:textStyle="bold"
-        android:textSize="23dp"
+        android:textSize="16dp"
         android:text="@string/Web"
         android:layout_alignParentRight="true"
-        android:layout_width="180dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="465dp"
-        android:layout_marginLeft="210dp" />
+        android:layout_marginTop="465dp" />
 
 </RelativeLayout>

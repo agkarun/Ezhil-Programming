@@ -6,8 +6,8 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
-package com.ezhil.techtoaid.ezhilprogramming;
 
+package com.ezhil.handbook;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,18 +17,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.ezhil.handbook.R;
 
-public class StartEzhil_Functions extends AppCompatActivity {
+
+public class StartEzhil_Loops_Exercise extends AppCompatActivity {
     ListView listView;
-    String title1="niral_baagam";
-    String title2="thodar_perukku";
-    String title3="meendum_azhaikkapadum_niralbagam";
-    String title4="payirchi(niralbaagam)";
-    String[] items={"நிரல்பாகம்(Functions)","தொடர் பெறுக்கு (Factorial)","மீண்டும் அழைக்கப்படும் நிரல்பாகம் (Recursion)","பயிற்சி"};
+    String title1="payichi_ovvonraaga";
+    String title2="payirchi(sei_mudiyenil)";
+    String title3="payirchi(thernthedu_niruthu)";
+    String[] items={"பயிற்சி-1","பயிற்சி-2","பயிற்சி-3"};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.startezhil_functions);
-        listView=(ListView)findViewById(R.id.listview44);
+        setContentView(R.layout.startezhil_loops_exercise);
+        listView=(ListView)findViewById(R.id.listview421);
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -38,24 +39,19 @@ public class StartEzhil_Functions extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        Intent intent=new Intent(StartEzhil_Functions.this,Loadhtml.class);
+                        Intent intent=new Intent(StartEzhil_Loops_Exercise.this,Loadhtml.class);
                         intent.putExtra("file",title1);
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1=new Intent(StartEzhil_Functions.this,Loadhtml.class);
+                        Intent intent1=new Intent(StartEzhil_Loops_Exercise.this,Loadhtml.class);
                         intent1.putExtra("file",title2);
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2=new Intent(StartEzhil_Functions.this,Loadhtml.class);
+                        Intent intent2=new Intent(StartEzhil_Loops_Exercise.this,Loadhtml.class);
                         intent2.putExtra("file",title3);
                         startActivity(intent2);
-                        break;
-                    case 3:
-                        Intent intent3=new Intent(StartEzhil_Functions.this,Loadhtml.class);
-                        intent3.putExtra("file",title4);
-                        startActivity(intent3);
                         break;
                 }
             }

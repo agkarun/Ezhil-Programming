@@ -7,31 +7,25 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.ezhil.techtoaid.ezhilprogramming;
+package com.ezhil.handbook;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
-public class Loadhtml extends AppCompatActivity {
-    WebView web;
-    String filepath;
-    String filename;
+import com.ezhil.handbook.R;
+
+
+public class Aboutweb extends AppCompatActivity {
+    WebView wview;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loadhtml);
-        web = (WebView) findViewById(R.id.webview);
-        web.getSettings().setDisplayZoomControls(false);
-        web.getSettings().setJavaScriptEnabled(true);
-        web.setWebViewClient(new WebViewClient());
+        setContentView(R.layout.aboutweb);
+        wview=(WebView)findViewById(R.id.aboutweb);
+        wview.setWebViewClient(null);
+        wview.getSettings().setJavaScriptEnabled(true);
         Bundle extras=getIntent().getExtras();
-        if(extras!=null)
-        {
-            filename=extras.getString("file");
-            filepath="file:///android_asset/contents/"+filename+".html";
-            web.loadUrl(filepath);
-        }
-
+        String url=extras.getString("url");
+        wview.loadUrl(url);
     }
 }
