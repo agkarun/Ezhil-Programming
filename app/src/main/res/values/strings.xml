@@ -1,19 +1,20 @@
 <resources>
-    <string name="app_name">Ezhil Programming</string>
+    <string name="app_name">எழில் கையேடு</string>
     <string name="developerdetais">மென்பொருளை மேம்படுத்தியவர் விவங்கள்</string>
-    <string name="developername">கருணாகரன்.க</string>
-    <string name="college">S.K.P Engineering college</string>
-    <string name="place">Tiruvannamalai</string>
+    <string name="developername">கருணாகரன்.க, மற்றும் சிலர்</string>
+    <string name="college">S.K.P பொறியியல் கல்லூரி (S.K.P Engineering college)</string>
+    <string name="place">திருவண்ணாமலை</string>
     <string name="email">gkharan96@gmail.com</string>
     <string name="Ezhilweb">எழில் இணையதளம்</string>
     <string name="EzhilSite">www.ezhillang.org</string>
     <string name="Ezhilblog">எழில் வலைப்பதிவு</string>
-    <string name="Ezhilblogsite">www.ezhillang.wordpress.com</string>
+    <string name="Ezhilblogsite">http://ezhillang.wordpress.com</string>
     <string name="EzhilSource">எழில்மொழி மூலநிரல்</string>
-    <string name="EzhilSourcedesc">கீழே உள்ள இணைப்பில் எழில் மொழயின்  மூலநிரல்களை பெற்று  நீங்களும் பங்களிக்கலாம்.</string>
+    <string name="EzhilSourcedesc">கீழே உள்ள இணைப்பில் எழில் மொழயின்  மூலநிரல்களை பெற்று  நீங்களும் பங்களிக்கலாம். \'தமிழில் நிரல் எழுது\' புத்தகம், ஆசிரியர் என். சொக்கன், அ. முத்தையா.</string>
     <string name="Ezhilgit">https://github.com/Ezhil-Language-Foundation/Ezhil-Lang</string>
     <string name="license">மென்பொருள் உரிமம்</string>
-    <string name="licensedesc">இந்த எழில் கையேடு ஒரு திறமூல மென்பொருள் மற்றும் Apache License,Version 2.0 ன் கீழ் உரிமம் பெற்றது.மேலும் விவரங்களுக்கு கீழே உள்ள இணைப்பில் செல்லவும்.</string>
+    <string name="licensedesc">இந்த எழில் கையேடு ஒரு திறமூல மென்பொருள் மற்றும் Apache License,Version 2.0 ன் கீழ் உரிமம் பெற்றது.மேலும் விவரங்களுக்கு கீழே உள்ள இணைப்பில் செல்லவும். நாம் பயன்படுத்திய எழுத்துரு \'Catamaran\'; \'Catamaran\' திட்டம் இந்திய வடிவமைப்பாளர் பிரியா ரவிச்சந்திரன் தலைமையில் உள்ளது. பங்களிக்க, github.com/VanillaandCream/Catamaran.
+.</string>
     <string name="licensetext">http://www.apache.org/licenses/LICENSE-2.0</string>
     <string name="Appsourcedesc">எழில் கையேட்டின் மூலநிரலை பெற்று நீங்களும் பங்களிக்கலாம்,நிரலை பெற கீழே உள்ள இணைப்பில் செல்லவும்.</string>
     <string name="Appsourcegit">https://github.com/gkarunakaran/Ezhil-Programming.git</string>
@@ -24,5 +25,5 @@
     <string name="Examples">உதாரணங்கள்</string>
     <string name="Web">வலைதளத்தில் எழில்</string>
     <string name="About">செயலியை பற்றி</string>
-
+    <string name="CannotChangeFont">எழுத்துரு மாற்ற முடியவில்லை. கணினி எழுத்துரு பயன்படுத்தி.</string>
 </resources>
