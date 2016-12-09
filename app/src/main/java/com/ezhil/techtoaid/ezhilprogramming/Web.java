@@ -24,6 +24,7 @@ public class Web extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web);
         onweb = (WebView) findViewById(R.id.onwebview);
+        onweb.getSettings().setDefaultTextEncodingName("utf-8");
         onweb.getSettings().setLoadWithOverviewMode(true);
         onweb.getSettings().setUserAgentString(DESKTOP_USERAGENT);
         onweb.getSettings().setUseWideViewPort(true);

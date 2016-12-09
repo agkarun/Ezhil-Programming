@@ -44,8 +44,7 @@ public class About extends AppCompatActivity {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
                     webview.loadUrl("http://www.ezhillang.org");
-                }
-                else{
+                } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
             }
@@ -56,8 +55,7 @@ public class About extends AppCompatActivity {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
                     webview.loadUrl("http://ezhillang.wordpress.com");
-                }
-                else{
+                } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
             }
@@ -68,10 +66,9 @@ public class About extends AppCompatActivity {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
                 webview.loadUrl("http://github.com/Ezhil-Language-Foundation/Ezhil-Lang");
-            }
-                else{
+            } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
-                }
+            }
             }
         });
         text4.setOnClickListener(new View.OnClickListener() {
@@ -82,8 +79,7 @@ public class About extends AppCompatActivity {
                     Intent intent = new Intent(About.this,Aboutweb.class);
                     intent.putExtra("url", "http://apache.org/licenses/LICENSE-2.0");
                     startActivity(intent);
-                }
-                else{
+                } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
             }
@@ -94,8 +90,7 @@ public class About extends AppCompatActivity {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
                     webview.loadUrl("https://github.com/gkarunakaran/Ezhil-Programming");
-                }
-                else{
+                } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
             }

@@ -17,7 +17,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-
 public class EzhilCode extends AppCompatActivity {
     ListView listView;
     String title1="eppadi_ezhuthuvathu";
