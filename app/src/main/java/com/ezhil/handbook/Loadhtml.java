@@ -7,32 +7,31 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.ezhil.techtoaid.ezhilprogramming;
+package com.ezhil.handbook;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Loadexamplehtml extends AppCompatActivity {
+import com.ezhil.handbook.R;
+
+public class Loadhtml extends AppCompatActivity {
     WebView web;
     String filepath;
     String filename;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loadexamplehtml);
-        web = (WebView) findViewById(R.id.examplehtml);
-        web.getSettings().setDefaultTextEncodingName("utf-8");
-        web.getSettings().setDisplayZoomControls(true);
+        setContentView(R.layout.loadhtml);
+        web = (WebView) findViewById(R.id.webview);
+        web.getSettings().setDisplayZoomControls(false);
         web.getSettings().setJavaScriptEnabled(true);
-        web.getSettings().setSupportZoom(true);
-        web.getSettings().setBuiltInZoomControls(true);
         web.setWebViewClient(new WebViewClient());
         Bundle extras=getIntent().getExtras();
         if(extras!=null)
         {
             filename=extras.getString("file");
-            filepath="file:///android_asset/examplecode/"+filename+".html";
+            filepath="file:///android_asset/contents/"+filename+".html";
             web.loadUrl(filepath);
         }
 

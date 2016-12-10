@@ -7,7 +7,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.ezhil.techtoaid.ezhilprogramming;
+package com.ezhil.handbook;
 
 
 import android.content.Context;
@@ -15,13 +15,13 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.ezhil.handbook.R;
 
 public class About extends AppCompatActivity {
     TextView text1,text2,text3,text4,text5;

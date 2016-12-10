@@ -7,7 +7,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*/
 
-package com.ezhil.techtoaid.ezhilprogramming;
+package com.ezhil.handbook;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,19 +17,19 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class EzhilCode extends AppCompatActivity {
+import com.ezhil.handbook.R;
+
+
+public class StartEzhil_Filehandling extends AppCompatActivity {
     ListView listView;
-    String title1="eppadi_ezhuthuvathu";
-    String title2="enge_ezhuthuvathu&enna_ezhuthuvathu";
-    String title3="niral_vazhimurai";
-    String title4="mathiri&muzhumayaana_niral";
-    String title5="parisothippathu&semithu_vaippathu";
-    String title6="kurisorkkal";
-    String[] items={"எப்படி எழுதுவது","எங்கே எழுதுவது & என்ன எழுதுவது","நிரல் வழிமுரை(Algorithm)","மாதிரி & முழுமையான நிரல் எழுதுவது ","நிரலை பரிசோதிப்பது & சேமித்து வைப்பது","குறிசொற்க்கள்(Keywords)",};
+    String title1="koppukali_kaiyalvathu";
+    String title2="puthiya_koppu_uruvakka&mooda";
+    String title3="koppai_thirakka&padikka";
+    String[] items={"கோப்புகளை கையாள்வது","புதிய கோப்பு உருவாக்க & மூட","கோப்புகளை திறக்க & படிக்க"};
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ezhilcode);
-        listView=(ListView)findViewById(R.id.listview3);
+        setContentView(R.layout.stratezhil_filehandling);
+        listView=(ListView)findViewById(R.id.listview45);
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -39,34 +39,19 @@ public class EzhilCode extends AppCompatActivity {
                 switch (position)
                 {
                     case 0:
-                        Intent intent=new Intent(EzhilCode.this,Loadhtml.class);
+                        Intent intent=new Intent(StartEzhil_Filehandling.this,Loadhtml.class);
                         intent.putExtra("file",title1);
                         startActivity(intent);
                         break;
                     case 1:
-                        Intent intent1=new Intent(EzhilCode.this,Loadhtml.class);
+                        Intent intent1=new Intent(StartEzhil_Filehandling.this,Loadhtml.class);
                         intent1.putExtra("file",title2);
                         startActivity(intent1);
                         break;
                     case 2:
-                        Intent intent2=new Intent(EzhilCode.this,Loadhtml.class);
+                        Intent intent2=new Intent(StartEzhil_Filehandling.this,Loadhtml.class);
                         intent2.putExtra("file",title3);
                         startActivity(intent2);
-                        break;
-                    case 3:
-                        Intent intent3=new Intent(EzhilCode.this,Loadhtml.class);
-                        intent3.putExtra("file",title4);
-                        startActivity(intent3);
-                        break;
-                    case 4:
-                        Intent intent4=new Intent(EzhilCode.this,Loadhtml.class);
-                        intent4.putExtra("file",title5);
-                        startActivity(intent4);
-                        break;
-                    case 5:
-                        Intent intent5=new Intent(EzhilCode.this,Loadhtml.class);
-                        intent5.putExtra("file",title6);
-                        startActivity(intent5);
                         break;
                 }
             }
