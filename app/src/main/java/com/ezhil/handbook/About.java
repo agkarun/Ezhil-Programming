@@ -37,6 +37,13 @@ public class About extends AppCompatActivity {
         text3=(TextView)findViewById(R.id.source);
         text4=(TextView)findViewById(R.id.license);
         text5=(TextView)findViewById(R.id.appsource);
+
+        // update the font
+        TextView tv [] = {text1, text2, text3, text4, text5};
+        for(TextView _tv : tv) {
+            FontCustomizer.update(this,_tv);
+        }
+
         cm=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         text1.setOnClickListener(new View.OnClickListener() {
             @Override
