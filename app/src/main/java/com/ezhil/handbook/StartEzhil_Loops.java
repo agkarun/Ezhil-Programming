@@ -33,7 +33,8 @@ public class StartEzhil_Loops extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startezhil_loops);
         listView=(ListView)findViewById(R.id.listview42);
-        ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
+        CustomArrayAdapter adapter= new CustomArrayAdapter(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
+        //ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -290,7 +290,8 @@ public class EzhilExamples_Examples extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ezhilexamples_examples);
         ListView list=(ListView)findViewById(R.id.listview52);
-        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,listitems);
+        CustomArrayAdapter adapter= new CustomArrayAdapter(this,android.R.layout.simple_list_item_1,android.R.id.text1,items);
+        //ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,android.R.id.text1,listitems);
         list.setAdapter(adapter);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
