@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ezhil-Programming.iml" filepath="$PROJECT_DIR$/Ezhil-Programming.iml" />
       <module fileurl="file://$PROJECT_DIR$/EzhilProgramming.iml" filepath="$PROJECT_DIR$/EzhilProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
