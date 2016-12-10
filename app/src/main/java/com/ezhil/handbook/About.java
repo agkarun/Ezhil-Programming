@@ -1,4 +1,4 @@
-/*Copyright 2017 Karunakaran.G Licensed under the Apache License, Version 2.0 (the "License");
+/*Copyright 2016 Karunakaran.G Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License. You may obtain a copy of the License at
 http://www.apache.org/licenses/LICENSE-2.0
 Unless required by applicable law or agreed to in writing, software
@@ -12,8 +12,10 @@ package com.ezhil.handbook;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,15 +25,15 @@ import android.widget.Toast;
 
 import com.ezhil.handbook.R;
 
+import java.net.URI;
+
 public class About extends AppCompatActivity {
     TextView text1,text2,text3,text4,text5;
-    WebView webview;
     NetworkInfo ni;
     ConnectivityManager cm;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.about);
-        webview=new WebView(About.this);
         text1=(TextView)findViewById(R.id.website);
         text2=(TextView)findViewById(R.id.blog);
         text3=(TextView)findViewById(R.id.source);
@@ -50,7 +52,10 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
-                    webview.loadUrl("http://www.ezhillang.org");
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    Uri uri=Uri.parse("http://www.ezhillang.org");
+                    intent.setData(uri);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
@@ -61,7 +66,11 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
-                    webview.loadUrl("http://ezhillang.wordpress.com");
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    Uri uri=Uri.parse("http://ezhillang.wordpress.com");
+                    intent.setData(uri);
+                    startActivity(intent);
+
                 } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
@@ -72,7 +81,11 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
-                webview.loadUrl("http://github.com/Ezhil-Language-Foundation/Ezhil-Lang");
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    Uri uri=Uri.parse("http://github.com/Ezhil-Language-Foundation/Ezhil-Lang");
+                    intent.setData(uri);
+                    startActivity(intent);
+
             } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
             }
@@ -83,9 +96,11 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
-                    Intent intent = new Intent(About.this,Aboutweb.class);
-                    intent.putExtra("url", "http://apache.org/licenses/LICENSE-2.0");
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    Uri uri=Uri.parse("http://apache.org/licenses/LICENSE-2.0");
+                    intent.setData(uri);
                     startActivity(intent);
+
                 } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }
@@ -96,7 +111,10 @@ public class About extends AppCompatActivity {
             public void onClick(View v) {
                 ni=cm.getActiveNetworkInfo();
                 if(ni!=null&&ni.isConnected()==true) {
-                    webview.loadUrl("https://github.com/gkarunakaran/Ezhil-Programming");
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    Uri uri=Uri.parse("https://github.com/gkarunakaran/Ezhil-Programming");
+                    intent.setData(uri);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
                 }

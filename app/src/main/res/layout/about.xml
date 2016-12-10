@@ -18,11 +18,11 @@
         <TextView
             android:textColor="#413e3e"
             android:layout_marginLeft="5dp"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/developername"
             android:textStyle="bold"
-            android:textSize="22dp"
+            android:textSize="20dp"
             android:layout_marginTop="50dp"
             />
         <TextView
@@ -30,9 +30,9 @@
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:text="@string/college"
-            android:textSize="20dp"
+            android:textSize="18dp"
             android:layout_marginTop="80dp"
             />
         <TextView
@@ -40,10 +40,10 @@
             android:textStyle="bold"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:text="@string/place"
-            android:textSize="20dp"
-            android:layout_marginTop="110dp"
+            android:textSize="18dp"
+            android:layout_marginTop="127dp"
             />
         <TextView
             android:textColor="#413e3e"
@@ -52,8 +52,8 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="@string/email"
-            android:textSize="20dp"
-            android:layout_marginTop="138dp"
+            android:textSize="18dp"
+            android:layout_marginTop="150dp"
             />
         <TextView
             android:layout_width="match_parent"
@@ -100,7 +100,7 @@
         <TextView
             android:textColor="#413e3e"
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="80dp"
             android:text="@string/EzhilSourcedesc"
             android:textSize="15dp"
             android:layout_marginTop="370dp"
@@ -108,57 +108,60 @@
         <TextView
             android:id="@+id/source"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="50dp"
             android:text="@string/Ezhilgit"
-            android:textSize="18dp"
-            android:layout_marginTop="420dp"
+            android:textSize="15dp"
+            android:layout_marginTop="445dp"
             android:textColor="#0949af"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:textSize="20dp"
-            android:layout_marginTop="465dp"
+            android:layout_marginTop="495dp"
             android:text="@string/license"
             android:textColor="#FFFFFF"
             android:background="#362d2e"/>
         <TextView
+            android:id="@+id/licensedesc"
             android:textColor="#413e3e"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
             android:text="@string/licensedesc"
             android:textSize="15dp"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="530dp"
             />
         <TextView
             android:id="@+id/license"
             android:textColor="#0949af"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="30dp"
             android:text="@string/licensetext"
             android:textSize="15dp"
-            android:layout_marginTop="575dp"
+            android:paddingTop="8dp"
+            android:layout_below="@+id/licensedesc"
             />
         <TextView
             android:textColor="#413e3e"
-            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:text="@string/Appsourcedesc"
             android:textSize="15dp"
-            android:layout_marginTop="595dp"
+            android:padding="8dp"
+            android:id="@+id/appsourcedesc"
+            android:layout_below="@+id/license"
             />
         <TextView
+            android:layout_below="@+id/appsourcedesc"
             android:textColor="#0949af"
             android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
+            android:layout_height="40dp"
             android:text="@string/Appsourcegit"
             android:textSize="14dp"
             android:id="@+id/appsource"
-            android:layout_marginTop="655dp"
-            android:layout_marginBottom="15dp"
+            android:paddingTop="8dp"
             />
     </RelativeLayout>
 </ScrollView>
