@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">எழில் கையேடு</string>
     <string name="developerdetais">மென்பொருளை மேம்படுத்தியவர் விவங்கள்</string>
-    <string name="developername">கருணாகரன்.க, மற்றும் சிலர்</string>
+    <string name="developername">(C) 2016-2017 கருணாகரன்.க, மற்றும் எழில் மொழி அறக்கட்டளை.</string>
     <string name="college">S.K.P பொறியியல் கல்லூரி (S.K.P Engineering college)</string>
     <string name="place">திருவண்ணாமலை</string>
     <string name="email">gkharan96@gmail.com</string>
