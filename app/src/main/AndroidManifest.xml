@@ -31,7 +31,6 @@
         <activity android:name=".EzhilExamples"></activity>
         <activity android:name=".EzhilExamples_Comparison"></activity>
         <activity android:name=".About"></activity>
-        <activity android:name=".Aboutweb"></activity>
         <activity android:name=".EzhilExamples_Examples"></activity>
         <activity android:name=".Loadexamplehtml"></activity>
 

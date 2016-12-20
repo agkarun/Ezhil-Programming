@@ -5,3 +5,9 @@
 # Ezhil-Programming
 Ezhil Programming is Application for android operating system by using this application we can learn ezhil programming language 
 and also compilation canbe done this application.this application was licensed under apache 2.0.
+
+# Google Play Store
+A early alpha testing of the app is underway at Google Play store and we will
+eventually publish the app at same site.
+https://play.google.com/store/apps/details?id=com.ezhil.handbook
+
