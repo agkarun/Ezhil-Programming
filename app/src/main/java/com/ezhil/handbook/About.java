@@ -9,7 +9,6 @@ limitations under the License.*/
 
 package com.ezhil.handbook;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentSender;
@@ -19,15 +18,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ezhil.handbook.R;
-
-import java.net.URI;
-
-public class About extends AppCompatActivity {
+public class About extends AppCompatActivity implements View.OnClickListener {
     TextView text1,text2,text3,text4,text5;
     NetworkInfo ni;
     ConnectivityManager cm;
@@ -47,79 +41,36 @@ public class About extends AppCompatActivity {
         }
 
         cm=(ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
-        text1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ni=cm.getActiveNetworkInfo();
-                if(ni!=null&&ni.isConnected()==true) {
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    Uri uri=Uri.parse("http://www.ezhillang.org");
-                    intent.setData(uri);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-        text2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ni=cm.getActiveNetworkInfo();
-                if(ni!=null&&ni.isConnected()==true) {
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    Uri uri=Uri.parse("http://ezhillang.wordpress.com");
-                    intent.setData(uri);
-                    startActivity(intent);
+        text1.setTag(new String("http://www.ezhillang.org"));
+        text1.setOnClickListener(this);
 
-                } else {
-                    Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-        text3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ni=cm.getActiveNetworkInfo();
-                if(ni!=null&&ni.isConnected()==true) {
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    Uri uri=Uri.parse("http://github.com/Ezhil-Language-Foundation/Ezhil-Lang");
-                    intent.setData(uri);
-                    startActivity(intent);
+        text2.setTag(new String("http://ezhillang.wordpress.com"));
+        text2.setOnClickListener(this);
 
-            } else {
-                    Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
-            }
-            }
-        });
-        text4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ni=cm.getActiveNetworkInfo();
-                if(ni!=null&&ni.isConnected()==true) {
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    Uri uri=Uri.parse("http://apache.org/licenses/LICENSE-2.0");
-                    intent.setData(uri);
-                    startActivity(intent);
+        text3.setTag(new String("http://github.com/Ezhil-Language-Foundation/Ezhil-Lang"));
+        text3.setOnClickListener(this);
 
-                } else {
-                    Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-        text5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ni=cm.getActiveNetworkInfo();
-                if(ni!=null&&ni.isConnected()==true) {
-                    Intent intent=new Intent(Intent.ACTION_VIEW);
-                    Uri uri=Uri.parse("https://github.com/gkarunakaran/Ezhil-Programming");
-                    intent.setData(uri);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
-                }
-            }
-        });
+        text4.setTag(new String("http://apache.org/licenses/LICENSE-2.0"));
+        text4.setOnClickListener(this);
 
+        text5.setTag(new String("https://github.com/gkarunakaran/Ezhil-Programming"));
+        text5.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        String url_ref = "http://ezhillang.org";
+        if ( v.getTag() != null )
+            url_ref = v.getTag().toString().toString();
+
+        ni=cm.getActiveNetworkInfo();
+        if(ni!=null && ni.isConnected()==true) {
+            Intent intent=new Intent(Intent.ACTION_VIEW);
+            Uri uri=Uri.parse(url_ref);
+            intent.setData(uri);
+            startActivity(intent);
+        } else {
+            Toast.makeText(getApplicationContext(),"இணைய இணைப்பை சரிபார்க்கவும்",Toast.LENGTH_LONG).show();
+        }
     }
 }
